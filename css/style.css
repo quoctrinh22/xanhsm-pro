@@ -1,5 +1,5 @@
 body {
-  /* font-family: "Mulish"; */
+  font-family: "Mulish";
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -309,12 +309,12 @@ h6 {
 
 /* ---------- tin tức - index ---------- */
 .tin-tuc {
+  max-width: 1140px;
   margin-bottom: 46px;
 }
 
 .item-tintuc {
   padding-top: 46px;
-  gap: 40px;
 }
 
 .tintuc-image-wrapper {
@@ -347,6 +347,7 @@ h6 {
   color: #777777;
   text-align: justify;
 }
+
 
 /* ============================== */
 

@@ -270,7 +270,7 @@
             <h1 class="fw-bold fs-2 text-center">TIN TỨC</h1>
         </div>
         <div class="row d-flex justify-content-center align-items-stretch item-tintuc">
-            <div class="col-12 col-md-3 px-0" style="animation-delay: 500ms" data-aos-offset="100"
+            <div class="col-12 col-md-3 tintuc-wrapper" style="animation-delay: 500ms" data-aos-offset="100"
                 data-aos="animate__fadeInUp" data-aos-once="true">
                 <div class="tintuc-image-wrapper">
                     <a href="#"><img class="img-fluid tintuc-image" src="./images/tintuc-1.jpg" alt=""></a>
@@ -286,7 +286,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col-12 col-md-3 px-0" style="animation-delay: 700ms" data-aos-offset="100"
+            <div class="col-12 col-md-3 tintuc-wrapper" style="animation-delay: 700ms" data-aos-offset="100"
                 data-aos="animate__fadeInUp" data-aos-once="true">
                 <div class="tintuc-image-wrapper">
                     <a href="#"><img class="img-fluid tintuc-image" src="./images/tintuc-2.jpg" alt=""></a>
@@ -301,7 +301,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col-12 col-md-3 px-0" style="animation-delay: 800ms" data-aos-offset="100"
+            <div class="col-12 col-md-3 tintuc-wrapper" style="animation-delay: 800ms" data-aos-offset="100"
                 data-aos="animate__fadeInUp" data-aos-once="true">
                 <div class="tintuc-image-wrapper">
                     <a href="#"><img class="img-fluid tintuc-image" src="./images/tintuc-3.jpg" alt=""></a>
@@ -418,6 +418,10 @@
             useClassNames: true,
             initClassName: false,
             animatedClassName: "animate__animated",
+            disable: function () {
+                var maxWidth = 768;
+                return window.innerWidth < maxWidth;
+            }
         });
     </script>
 </body>
