@@ -43,10 +43,12 @@ h6 {
 .navbar-nav .nav-link {
   color: #fffeff;
   font-size: 15px;
+  border: 2px solid transparent;
 }
 
 .navbar-nav .nav-link:hover {
   color: #ffa700;
+  border-bottom: 2px solid #ffa700;
 }
 
 .navbar-nav .dropdown:hover>.dropdown-menu {
@@ -303,18 +305,28 @@ h6 {
 }
 
 /* ---------- đăng ký - index ---------- */
+.img-dangky {
+  max-width: 1140px;
+}
+
 .img-dangky img {
+  width: 100%;
   padding: 64px 0px;
 }
 
 /* ---------- tin tức - index ---------- */
+.tin-tuc-wrapper {
+  background-color: #f6f6f9;
+}
+
 .tin-tuc {
   max-width: 1140px;
-  margin-bottom: 46px;
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
 
 .item-tintuc {
-  padding-top: 46px;
+  padding-top: 20px;
 }
 
 .tintuc-image-wrapper {
@@ -348,6 +360,15 @@ h6 {
   text-align: justify;
 }
 
+.tintuc-wrapper {
+  width: 32%;
+}
+
+@media (max-width: 767px) {
+  .tintuc-wrapper {
+    width: 100%;
+  }
+}
 
 /* ============================== */
 
