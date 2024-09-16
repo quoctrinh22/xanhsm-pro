@@ -22,6 +22,7 @@ h6 {
 /* ---------- menu ---------- */
 .menu-top {
   background: rgb(0, 0, 0, 1);
+  padding: 6px 0px;
 }
 
 .menu {
@@ -50,14 +51,6 @@ h6 {
 .navbar-nav .nav-link:focus {
   color: #ffa700;
   border-bottom: 2px solid #ffa700;
-}
-
-.navbar-nav .dropdown:hover>.dropdown-menu {
-  display: block;
-}
-
-.navbar-nav .dropdown>.dropdown-toggle:active {
-  pointer-events: none;
 }
 
 .dropdown-menu {
