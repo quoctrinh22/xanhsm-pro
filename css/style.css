@@ -901,3 +901,31 @@ select:focus-visible {
   background-color: #fae7b9;
   color: #333;
 }
+
+/* ============================== */
+
+/* ========== tuyển dụng taxi ========== */
+
+/* ============================== */
+
+/* ========== dịch vụ taxi ========== */
+
+/* ---------- giới thiệu ---------- */
+.dv-xanhsm-taxi .container {
+  max-width: 1140px;
+}
+
+.gioithieu-dv-taxi {
+  padding: 64px 0px;
+}
+
+.gioithieu-dv-taxi p,
+.gioithieu-dv-taxi ul {
+  color: #7a7a7a;
+  line-height: 30px;
+}
+
+/* ---------- Thông tin ---------- */
+.thongtin-dv-taxi {
+  background-color: #f6f6f9;
+}

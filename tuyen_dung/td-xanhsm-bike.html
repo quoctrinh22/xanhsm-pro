@@ -42,25 +42,16 @@
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        DỊCH VỤ
-                                    </a>
+                                        data-bs-toggle="dropdown" aria-expanded="false">DỊCH VỤ</a>
                                     <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
                                         <li><a class="dropdown-item py-2 fw-bold"
-                                                href="../dich_vu/xanhsm-taxi.html">Xanh
-                                                SM
-                                                Taxi</a></li>
+                                                href="../dich_vu/dv-xanhsm-taxi.html">Xanh SM Taxi</a></li>
                                         <li><a class="dropdown-item py-2 fw-bold"
-                                                href="../dich_vu/xanhsm-luxury.html">Xanh
-                                                SM
-                                                Luxury</a></li>
+                                                href="../dich_vu/xanhsm-luxury.html">Xanh SM Luxury</a></li>
                                         <li><a class="dropdown-item py-2 fw-bold"
-                                                href="../dich_vu/xanhsm-bike.html">Xanh
-                                                SM
-                                                Bike</a></li>
+                                                href="../dich_vu/dv-xanhsm-bike.html">Xanh SM Bike</a></li>
                                         <li><a class="dropdown-item py-2 fw-bold"
-                                                href="../dich_vu/xanhsm-express.html">Xanh
-                                                Express</a></li>
+                                                href="../dich_vu/xanhsm-express.html">Xanh Express</a></li>
                                         <li><a class="dropdown-item py-2 fw-bold"
                                                 href="../dich_vu/xanh-4biz.html">Xanh4Biz</a></li>
                                     </ul>
@@ -72,22 +63,17 @@
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
                                         <li><a class="dropdown-item py-2 fw-bold"
-                                                href="../platform/xanhsm-platform.html">Xanh
-                                                SM Platform</a></li>
+                                                href="../platform/xanhsm-platform.html">Xanh SM Platform</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle " href="#" id="servicesDropdown" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        TUYỂN DỤNG
-                                    </a>
+                                        data-bs-toggle="dropdown" aria-expanded="false">TUYỂN DỤNG</a>
                                     <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
                                         <li><a class="dropdown-item py-2 fw-bold"
-                                                href="../tuyen_dung/xanhsm-taxi.html">Xanh
-                                                SM Taxi</a></li>
+                                                href="../tuyen_dung/td-xanhsm-taxi.html">Xanh SM Taxi</a></li>
                                         <li><a class="dropdown-item py-2 fw-bold"
-                                                href="../tuyen_dung/xanhsm-bike.html">Xanh
-                                                SM Bike</a></li>
+                                                href="../tuyen_dung/td-xanhsm-bike.html">Xanh SM Bike</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item dropdown px-lg-2">
@@ -97,20 +83,15 @@
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
                                         <li><a class="dropdown-item py-2 fw-bold" href="../tin_tuc/cong-ty.html">Công
-                                                ty</a>
-                                        </li>
+                                                ty</a></li>
                                         <li><a class="dropdown-item py-2 fw-bold" href="../tin_tuc/uu-dai.html">Ưu
-                                                đãi</a>
-                                        </li>
+                                                đãi</a> </li>
                                         <li><a class="dropdown-item py-2 fw-bold" href="../tin_tuc/cong-dong.html">Cộng
                                                 đồng</a></li>
                                         <li><a class="dropdown-item py-2 fw-bold" href="../tin_tuc/bao-tri.html">Báo
-                                                chí</a>
-                                        </li>
+                                                chí</a></li>
                                         <li><a class="dropdown-item py-2 fw-bold"
-                                                href="../tin_tuc/blog-tai-xe.html">Blog
-                                                tài
-                                                xế</a></li>
+                                                href="../tin_tuc/blog-tai-xe.html">Blog tài xế</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item">
@@ -432,6 +413,10 @@
             useClassNames: true,
             initClassName: false,
             animatedClassName: "animate__animated",
+            disable: function () {
+                var maxWidth = 768;
+                return window.innerWidth < maxWidth;
+            }
         });
     </script>
 </body>
