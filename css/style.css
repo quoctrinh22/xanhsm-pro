@@ -1,0 +1,931 @@
+body {
+  font-family: "Mulish";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a,
+select {
+  pointer-events: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+}
+
+/* ---------- menu ---------- */
+.menu-top {
+  background: rgb(0, 0, 0, 1);
+  padding: 6px 0px;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1050;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+  color: #ffa700 !important;
+}
+
+.navbar-nav .nav-link {
+  color: #fffeff;
+  font-size: 15px;
+  border: 2px solid transparent;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  color: #ffa700;
+  border-bottom: 2px solid #ffa700;
+}
+
+.dropdown-menu {
+  padding: 0;
+  border-radius: 0;
+  border: none;
+}
+
+.dropdown-item {
+  font-size: 14px;
+}
+
+.dropdown-item:hover {
+  background: #fae7b9;
+}
+
+/* ----------- footer ----------- */
+.footer .container {
+  max-width: 1140px;
+  text-align: justify;
+}
+
+.in4 {
+  margin-left: 10px;
+}
+
+.icon-bar {
+  font-size: 20px;
+}
+
+.icon-bar>div {
+  transition: color 0.7s ease;
+}
+
+.icon-bar>div:hover {
+  color: #ffa700 !important;
+}
+
+.oto-footer {
+  margin-top: 45%;
+}
+
+.nav-item {
+  list-style: none;
+}
+
+.copyright {
+  font-size: 12px;
+}
+
+.icon-fb {
+  padding-left: 0;
+  padding-right: 6px;
+}
+
+.icon-fb a:hover {
+  color: #3b5998 !important;
+}
+
+.icon-chplay {
+  padding-left: 6px;
+  padding-right: 12px;
+}
+
+.icon-chplay a:hover {
+  color: #ffa700 !important;
+}
+
+.icon-appstore a:hover {
+  color: #03b4f6 !important;
+}
+
+.chungnhan {
+  padding: 0;
+}
+
+/* ---------- aos ---------- */
+[data-aos] {
+  visibility: hidden;
+}
+
+[data-aos].animate__animated {
+  visibility: visible;
+}
+
+/* ========== index ========== */
+.banner,
+.banner-gioithieu {
+  display: flex;
+  justify-content: center;
+}
+
+/* ---------- giới thiệu - index ---------- */
+.gioi-thieu {
+  max-width: 1140px;
+  padding: 46px 0px;
+}
+
+.gioi-thieu a {
+  display: flex;
+  justify-content: center;
+  width: 150px;
+  margin-top: 20px;
+  padding: 15px 20px;
+  font-size: 14px;
+  background-color: transparent;
+  color: #ffa700;
+  border: 2px solid #ffa700;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.7s ease, color 0.7s ease;
+}
+
+.gioi-thieu a:hover {
+  background-color: #ffa700;
+  color: #fff;
+}
+
+.left {
+  padding: 40px 26px 10px 26px;
+}
+
+.left>p {
+  color: #8e8ea9;
+}
+
+.right {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* ---------- dịch vụ - index ---------- */
+.dich-vu-wrapper {
+  background-color: #f6f6f9;
+  padding: 60px 0px;
+}
+
+.dich-vu-wrapper h1 {
+  margin: 0px 0px 30px;
+}
+
+.dich-vu {
+  gap: 30px;
+}
+
+.content-dichvu {
+  padding: 30px;
+}
+
+.content-dichvu h2 {
+  margin-bottom: 46px;
+  font-size: 24px;
+}
+
+.content-dichvu p {
+  padding: 0 0 30px;
+}
+
+.o-to,
+.xe-may,
+.thue-xe {
+  position: relative;
+}
+
+.o-to a,
+.xe-may a,
+.thue-xe a {
+  position: absolute;
+  bottom: 30px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #ffa700;
+}
+
+/* ---------- cài đặt ứng dụng - index ---------- */
+.cai-dat {
+  background-size: cover;
+}
+
+.top-dv>p {
+  padding-top: 100px;
+}
+
+.top-dv>h1 {
+  padding-bottom: 35px;
+}
+
+.item {
+  max-width: 1140px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.item h2 {
+  color: #ffc61a;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+.item-2 {
+  display: flex;
+  justify-content: center;
+  max-width: 460px;
+  z-index: 1050;
+}
+
+.item-1,
+.item-3 {
+  display: flex;
+  align-items: center;
+}
+
+.item-1 p,
+.item-3 p {
+  text-align: justify;
+}
+
+.item-1 {
+  padding: 0px 30px;
+}
+
+.item-3 {
+  padding: 23px 30px 0px;
+}
+
+@media (max-width: 1024px) {
+  .item-2 {
+    order: 3;
+    width: 100%;
+    padding-top: 10px;
+  }
+
+  .item-2 img {
+    width: 70%;
+  }
+
+  .item-3 {
+    padding-top: 0;
+  }
+
+  .item-1 {
+    padding-left: 30px;
+  }
+}
+
+/* ---------- đăng ký - index ---------- */
+.img-dangky {
+  max-width: 1140px;
+}
+
+.img-dangky img {
+  width: 100%;
+  padding: 64px 0px;
+}
+
+/* ---------- tin tức - index ---------- */
+.tin-tuc-wrapper {
+  background-color: #f6f6f9;
+}
+
+.tin-tuc {
+  max-width: 1140px;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.item-tintuc {
+  padding-top: 20px;
+}
+
+.tintuc-image-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 60%;
+  overflow: hidden;
+}
+
+.tintuc-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content-tintuc a {
+  margin: 10px 0px;
+}
+
+.content-tintuc b {
+  font-size: 12px;
+  color: #666687;
+}
+
+.content-tintuc p {
+  margin-top: 10px;
+  color: #777777;
+  text-align: justify;
+}
+
+.tintuc-wrapper {
+  width: 32%;
+}
+
+@media (max-width: 767px) {
+  .tintuc-wrapper {
+    width: 100%;
+  }
+}
+
+/* ============================== */
+
+/* ========== giới thiệu ========== */
+
+/* ---------- banner ---------- */
+.banner-gioithieu {
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-gioithieu h1 {
+  font-size: 40px;
+}
+
+@media (max-width: 1024px) {
+
+  .banner-gioithieu,
+  .banner-gioithieu img {
+    height: 400px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .banner-gioithieu,
+  .banner-gioithieu img {
+    height: 350px;
+  }
+}
+
+/* ---------- Về GSM ---------- */
+.ve-gsm {
+  background-color: #f6f6f9;
+  padding: 64px 0px;
+}
+
+.ve-gsm-wrapper {
+  max-width: 1088px;
+}
+
+.ve-gsm-wrapper p {
+  text-align: justify;
+  margin-bottom: 5px;
+}
+
+/* ---------- Về Xanh Sm ---------- */
+.ve-xanhsm {
+  padding: 64px 0px;
+}
+
+.ve-xanhsm-wrapper {
+  max-width: 1088px;
+}
+
+.ve-xanhsm-wrapper p {
+  text-align: justify;
+  margin-bottom: 5px;
+}
+
+/* ---------- Màu nhận diện thương hiệu ---------- */
+.mau-th {
+  background-color: #f6f6f9;
+  padding: 64px 0px;
+}
+
+.mau-th-wrapper {
+  max-width: 1088px;
+}
+
+.mau-th-wrapper h6 {
+  color: #8e8ea9;
+}
+
+.mau-th-wrapper p {
+  text-align: justify;
+}
+
+/* ============================== */
+
+/* ========== Liên hệ ========== */
+
+/* ---------- Thông tin ---------- */
+.thong-tin {
+  max-width: 1140px;
+  margin: 64px 0px;
+  padding: 30px 185px;
+  border: 1px solid #dcdce4;
+  color: #3bbcb7;
+  transition: background-color 0.5s ease, border-color 0.5s ease;
+}
+
+.thong-tin:hover {
+  background-color: #f6f6f9;
+  border: 1px solid #3bbcb7;
+}
+
+.thong-tin .chi-tiet {
+  padding-top: 20px;
+}
+
+.text {
+  margin-left: 10px;
+  color: black;
+}
+
+@media (max-width: 1024px) {
+  .thong-tin {
+    padding: 30px 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .thong-tin {
+    padding: 30px 20px;
+  }
+}
+
+/* ---------- contact ---------- */
+.contact {
+  max-width: 1140px;
+  margin: 46px auto;
+}
+
+.form-contact input,
+textarea,
+select {
+  font-size: 14px;
+  color: #606266;
+  padding: 12px 18px;
+  width: 100%;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+}
+
+.form-contact input:focus,
+textarea:focus,
+select:focus-visible {
+  border: 1px solid #ffc61a;
+}
+
+.form-contact input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: none;
+}
+
+.form-contact a {
+  text-decoration: none;
+  color: #ffc824;
+}
+
+.form-contact .row {
+  margin-bottom: 20px;
+}
+
+.form-contact h6 {
+  padding: 12px 0px;
+  color: #8e8ea9;
+}
+
+.form-contact h1 {
+  padding-bottom: 20px;
+}
+
+.form-contact button {
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffa700;
+  border: 2px solid #ffa700;
+  padding: 12px 20px;
+  background-color: transparent;
+}
+
+.form-contact button:hover {
+  background-color: #fae7b9;
+  color: #333;
+}
+
+.label {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* ============================== */
+
+/* ========== Xanh SM Platform ========== */
+
+/* ---------- content-dangky ---------- */
+.xanhsm-platform .container {
+  max-width: 1140px;
+}
+
+.content-dangky-wrapper {
+  padding: 63px 12px;
+}
+
+.content-dangky-wrapper p {
+  text-align: start;
+  color: #7a7a7a;
+}
+
+.content-dangky-wrapper span {
+  font-weight: bold;
+  color: #33cccc;
+}
+
+.content-dangky-wrapper a {
+  text-decoration: none;
+  padding: 15px 30px;
+  border: 2px solid #ffa700;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #ffa700;
+}
+
+.content-dangky-wrapper a:hover {
+  background-color: #fae7b9;
+  color: #333;
+}
+
+/* ---------- Liên hệ tư vấn ---------- */
+.wrapper-lienhe-tuvan {
+  background-color: #28bdbf;
+}
+
+.lienhe-tuvan i {
+  margin-right: 10px;
+}
+
+.wrapper-lienhe-tuvan .lienhe-tuvan {
+  padding: 20px 0px;
+}
+
+.lienhe-tuvan a,
+.lienhe-tuvan b {
+  font-size: 15px;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* ---------- Lưu ý ---------- */
+.luu-y h6 {
+  font-style: italic;
+  font-weight: bold;
+  color: #7a7a7a;
+}
+
+.luu-y p {
+  font-size: 19px;
+  font-style: italic;
+  color: #767676;
+}
+
+.luu-y span {
+  color: #33cccc;
+  font-weight: bold;
+}
+
+.content-wrapper li {
+  padding: 5px;
+  color: #7a7a7a;
+  margin-left: 30px;
+}
+
+.content-wrapper a {
+  text-decoration: none;
+  color: #ffc61a;
+  font-size: 16px;
+}
+
+.content-wrapper a:hover {
+  transition: color 0.7s ease;
+  color: #606266;
+}
+
+.content-wrapper {
+  margin: 0px 0px 20px 20px;
+  border-left: 5px solid #ffc61a;
+  display: flex;
+  align-items: center;
+}
+
+/* ============================== */
+
+/* ========== tuyển dụng bike ========== */
+
+/* ---------- banner đăng ký bike ---------- */
+.dang-ky-bike {
+  margin: 64px 0px;
+}
+
+.dang-ky-bike-wrapper {
+  max-width: 1140px;
+}
+
+.dang-ky-bike-wrapper h6 {
+  color: #8e8ea9;
+}
+
+.dang-ky-bike-wrapper p {
+  color: black;
+}
+
+.dang-ky-bike-wrapper a {
+  max-width: 193px;
+  font-size: 14px;
+  color: #ffa700;
+  padding: 15px 30px;
+  border: 2px solid #ffa700;
+  border-radius: 4px;
+}
+
+.dang-ky-bike-wrapper a:hover {
+  background-color: #fae7b9;
+  color: #333;
+}
+
+/* ---------- Mô tả công việc bike ---------- */
+.mota-bike-wrapper {
+  background-image: url(../images/79e2c0f4-bikesm_100mm4798-scaled.jpg);
+  background-size: cover;
+}
+
+@media (max-width: 768px) {
+  .mota-bike-wrapper {
+    background: url(../images/79e2c0f4-bikesm_100mm4798-scaled2.jpg);
+    background-size: cover;
+  }
+}
+
+.mota-bike {
+  max-width: 1140px;
+  padding-top: 64px;
+  padding-bottom: 34px;
+}
+
+.mota-bike>.text-white>p {
+  color: #c0c0cf;
+}
+
+.mota-bike>.row {
+  margin-top: 64px;
+}
+
+.yeu-cau-wrapper {
+  margin-right: 20px;
+}
+
+@media (min-width: 768px) {
+
+  .yeu-cau-wrapper,
+  .quyen-loi-wrapper {
+    width: calc(50% - 10px);
+  }
+}
+
+.yeu-cau-wrapper,
+.quyen-loi-wrapper {
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.yeu-cau {
+  padding: 30px 0px 30px 20px;
+}
+
+.quyen-loi {
+  padding: 30px 20px;
+}
+
+@media (max-width: 600px) {
+
+  .yeu-cau,
+  .quyen-loi {
+    padding: 30px 0;
+  }
+}
+
+.yeu-cau>hr,
+.quyen-loi>hr {
+  margin: auto;
+  width: 100px;
+}
+
+.yeu-cau li {
+  line-height: 27px;
+  margin-left: 8px;
+  margin-bottom: 6px;
+}
+
+.yeu-cau h5 {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.thu-nhap-bike {
+  background-color: #f6f6f9;
+  padding: 10px 0px 15px;
+}
+
+.thu-nhap-bike p>b {
+  font-size: 36px;
+}
+
+.thu-nhap-bike a {
+  text-decoration: none;
+  color: #fff;
+  border-radius: 50px;
+  font-size: 14px;
+  padding: 7px 10px;
+  background-color: #3bbcb7;
+  margin-bottom: 10px;
+}
+
+.quyen-loi-bike {
+  margin-top: 40px;
+}
+
+.quyen-loi-bike i,
+.quyen-loi-bike p {
+  padding: 0px 0px 16px 10px;
+}
+
+/* ---------- hướng dẫn ứng tuyển ---------- */
+.ung-tuyen {
+  margin-top: 64px;
+  margin-bottom: 64px;
+  max-width: 1140px;
+}
+
+.dang-ky-truc-tiep {
+  margin-right: 20px;
+}
+
+@media (min-width: 768px) {
+
+  .dang-ky-truc-tiep,
+  .dang-ky-online {
+    width: calc(50% - 10px);
+  }
+}
+
+.dang-ky-truc-tiep,
+.dang-ky-online {
+  border: 1px solid #3bbcb7;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.truc-tiep,
+.online {
+  padding: 30px 20px;
+}
+
+@media (max-width: 600px) {
+
+  .truc-tiep,
+  .online {
+    padding: 30px 0;
+  }
+}
+
+.truc-tiep>hr,
+.online>hr {
+  margin: auto;
+  width: 100px;
+}
+
+.truc-tiep>p,
+.online>p {
+  margin-bottom: 35px;
+}
+
+.truc-tiep b {
+  font-style: italic;
+}
+
+.truc-tiep li {
+  margin: 10px 10px;
+}
+
+.trung-tam-ho-tro {
+  background-color: #f6f6f9;
+  padding: 20px;
+}
+
+.trung-tam-ho-tro h6 {
+  color: #2db4ae;
+}
+
+.trung-tam-ho-tro p,
+.trung-tam-ho-tro i {
+  color: #54595f;
+  padding: 10px 0px 0px 10px;
+}
+
+.trung-tam-ho-tro a {
+  text-decoration: none;
+}
+
+.btn-chi-duong {
+  margin-top: 30px;
+  padding: 12px 24px;
+  border: 1px solid #ffa700;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffa700;
+}
+
+.btn-chi-duong:hover {
+  background-color: #fae7b9;
+  color: #333;
+}
+
+.online a {
+  margin-top: 30px;
+  padding: 12px 24px;
+  border: 1px solid #ffa700;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffa700;
+}
+
+.online a:hover {
+  background-color: #fae7b9;
+  color: #333;
+}
+
+/* ============================== */
+
+/* ========== tuyển dụng taxi ========== */
+
+/* ============================== */
+
+/* ========== dịch vụ taxi ========== */
+
+/* ---------- giới thiệu ---------- */
+.dv-xanhsm-taxi .container {
+  max-width: 1140px;
+}
+
+.gioithieu-dv-taxi {
+  padding: 64px 0px;
+}
+
+.gioithieu-dv-taxi p,
+.gioithieu-dv-taxi ul {
+  color: #7a7a7a;
+  line-height: 30px;
+}
+
+/* ---------- Thông tin ---------- */
+.thongtin-dv-taxi {
+  background-color: #f6f6f9;
+}

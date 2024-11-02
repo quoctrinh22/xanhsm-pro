@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f6f7f8;
+        }
+
+        /* Container chính */
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Tabs */
+        .tabs {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .tab {
+            padding: 10px 20px;
+            cursor: pointer;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .tab.active {
+            border-bottom: 2px solid #00a99d;
+            color: #00a99d;
+        }
+
+        .content {
+            padding: 10px 0;
+        }
+
+        /* Danh sách địa điểm */
+        .location-box {
+            background-color: #f5f8fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .location-title {
+            color: #00a99d;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .location-address {
+            color: #333;
+        }
+
+        .direction {
+            margin-top: 10px;
+            color: #f7b500;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+        }
+
+        .direction img {
+            margin-right: 5px;
+        }
+
+        /* Form ứng tuyển trực tuyến */
+        .online-form {
+            text-align: center;
+        }
+
+        .online-form img {
+            width: 80px;
+            margin: 10px;
+        }
+
+        .form-text {
+            color: #00a99d;
+            font-weight: bold;
+        }
+    </style>
+    <link rel="stylesheet" href="../fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/script.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Tabs -->
+        <div class="tabs">
+            <div class="tab active">ĐĂNG KÝ TRỰC TIẾP</div>
+            <div class="tab">ĐĂNG KÝ ONLINE</div>
+        </div>
+
+        <!-- Nội dung Đăng ký trực tiếp -->
+        <div class="content">
+            <p>Ứng viên đến trực tiếp địa điểm phòng vấn để được hướng dẫn chi tiết</p>
+
+            <div class="location-box">
+                <div class="location-title">TP. Hà Nội - Depot Xanh SM Vinhomes Smart City</div>
+                <div class="location-address">Nhà điều hành Vinbus, Khu đô thị Smart City Tây Mỗ, Nam Từ Liêm, Hà Nội
+                </div>
+                <div class="direction">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/marker.png" alt="marker" width="16">
+                    <span>Chỉ đường</span>
+                </div>
+            </div>
+
+            <div class="location-box">
+                <div class="location-title">TP. Hà Nội - Depot Xanh SM Vinhomes Ocean Park</div>
+                <div class="location-address">Cổng sau Vincom Mega Mall Ocean Park, Đa Tốn, Gia Lâm, Hà Nội</div>
+                <div class="direction">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/marker.png" alt="marker" width="16">
+                    <span>Chỉ đường</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Nội dung Đăng ký online -->
+        <div class="content online-form" style="display: none;">
+            <p>Ứng viên lựa chọn điền form hoặc quét mã QR để điền form trên điện thoại</p>
+
+            <img src="https://img.icons8.com/ios-filled/100/00a99d/checked.png" alt="Điền Thông Tin Ứng Tuyển">
+            <div class="form-text">Điền Thông Tin Ứng Tuyển</div>
+
+            <img src="https://img.icons8.com/ios-filled/100/00a99d/qr-code.png" alt="QR Code">
+        </div>
+    </div>
+
+    <script>
+        // JS cho chức năng chuyển tab
+        const tabs = document.querySelectorAll('.tab');
+        const contentSections = document.querySelectorAll('.content');
+
+        tabs.forEach((tab, index) => {
+            tab.addEventListener('click', function () {
+                // Xóa class active khỏi tất cả các tab
+                tabs.forEach(t => t.classList.remove('active'));
+                // Thêm class active vào tab hiện tại
+                this.classList.add('active');
+
+                // Ẩn tất cả các content
+                contentSections.forEach(section => section.style.display = 'none');
+                // Hiển thị content tương ứng với tab
+                contentSections[index].style.display = 'block';
+            });
+        });
+    </script>
+
+</body>
+
+</html>
